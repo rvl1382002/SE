@@ -27,8 +27,8 @@ if __name__=='__main__':
         server=smtplib.SMTP('smtp.gmail.com',587) #connecting to SMTP server at port 587
         server.ehlo()
         server.starttls()
-        senderEmail='root.rvl@gmail.com'
-        senderPass='gdpmznhjhqijiuas'
+        senderEmail='<sender email>'
+        senderPass='<sender password>'
         server.login(senderEmail,senderPass)
     except:
         print("Unable to connect to the SMTP server")
