@@ -8,8 +8,8 @@ class otpSharing:
             self.server = smtplib.SMTP('smtp.gmail.com', 587)  # connecting to SMTP server at port 587
             self.server.ehlo()
             self.server.starttls()
-            self.senderEmail = 'root.rvl@gmail.com'
-            self.senderPass = 'gdpmznhjhqijiuas'
+            self.senderEmail = '<sender email>'
+            self.senderPass = '<sender password>'
             self.server.login(self.senderEmail, self.senderPass)
         except:
             print("Unable to connect to the SMTP server")
