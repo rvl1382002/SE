@@ -51,8 +51,6 @@ class otpSharing:
         self.server.sendmail(self.senderEmail, self.eMail, "Subject:OTP\nYour OTP using OOP is " + self.otp)  # Sending the email
         print("An {} digit OTP has been sent to {}".format(n, self.eMail))
 
-
-
 if __name__=='__main__':
     obj=otpSharing()
     n=int(input("Enter the OTP length: "))
