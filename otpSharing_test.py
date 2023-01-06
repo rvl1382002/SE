@@ -22,6 +22,9 @@ class TestOtpSharing(unittest.TestCase):
         expected = 123465
         testcase = 123465
         self.assertTrue(verifyOTP(testcase,expected))
+        expected2 = 654321
+        testcase2 = 123456
+        self.assertFalse(verifyOTP(testcase2,expected2))
 
 
 if __name__=="__main__":
